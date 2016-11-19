@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+python "$@" 2>&1 | bunyan --color
+exit ${PIPESTATUS[0]}
