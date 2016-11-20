@@ -11,5 +11,5 @@ if [ "${LOG: -4}" != ".log" ]; then
   LOG="${LOG}.log"
 fi
 
-"$@" 2>&1 | tee -a "${LOG}" | bunyan --color
+"$@" 2>&1 | tee -ai "${LOG}" | bunyan --color
 exit ${PIPESTATUS[0]}
