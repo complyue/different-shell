@@ -1,0 +1,8 @@
+
+Command to resume an scp transfer, try with rsync:
+
+rsync --partial --progress --rsh=ssh user@host:remote_file local_file
+
+e.g.
+
+rsync --partial --progress --rsh=ssh admin@damodarbashyal.com:/home/dltr/rt464867/db.sql.gz ./
